@@ -1,0 +1,93 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+    transition: 0.3s ease;
+  }
+  
+  /* Animated Element Styling */
+  #animatedElement {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 100px;
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  
+  /* Modal Styling */
+  .hidden {
+    display: none;
+  }
+  
+  #myModal {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  /* Slide-in Animation */
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-in {
+    animation: slideIn 1s ease-out;
+  }
+  
